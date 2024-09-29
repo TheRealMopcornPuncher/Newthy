@@ -30,6 +30,13 @@
         {% block main %}
         <!-- Main content will be injected here -->
         {% endblock %}
+        
+        <!-- Textbox for other templates to insert content -->
+        <div class="textbox">
+            {% block textbox %}
+            <!-- Text content will be injected here -->
+            {% endblock %}
+        </div>
     </div>
 </body>
 </html>
