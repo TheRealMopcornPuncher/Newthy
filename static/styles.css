@@ -1,0 +1,48 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+
+.navbar-custom {
+    background-color: #101935; /* Navbar background color */
+    color: #f2fdff; /* Navbar text color */
+    display: flex; /* Enable flexbox for the navbar */
+    align-items: center; /* Align items vertically */
+}
+
+.navbar-brand {
+    margin-right: 20px; /* Add space between the logo and the menu items */
+}
+
+.navbar-collapse {
+    flex-grow: 1; /* Allow the collapse to grow and fill the space */
+    justify-content: flex-start; /* Align the navbar items to the left */
+}
+
+.navbar-custom .nav-link {
+    color: #f2fdff; /* Nav link color */
+}
+
+.navbar-custom .nav-link:hover {
+    color: #9ad4d6; /* Highlight color on hover */
+}
+
+.highlight-bar {
+    height: 5px; /* Height of the highlight bar */
+    background-color: #9ad4d6; /* Highlight bar color */
+}
+
+/* Ensure the highlight bar appears below the navbar */
+.navbar {
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.container {
+    margin-top: 5px; /* Add some space between navbar and main content */
+}
+
+/* Additional styles for aesthetics */
+.navbar-nav {
+    margin: 0; /* Remove default margin */
+}
+
+.nav-link {
+    padding: 0 15px; /* Add some horizontal padding for links */
+}
