@@ -5,6 +5,7 @@
     color: #f2fdff; /* Navbar text color */
     display: flex; /* Enable flexbox for the navbar */
     align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
 }
 
 .navbar-custom .nav-link {
