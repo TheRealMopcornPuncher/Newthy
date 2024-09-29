@@ -8,16 +8,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="{{ url_for('static', filename='favicon.ico') }}" alt="Newthy Logo" style="height: 30px; width: 30px;">
-            <span class="ml-2">Newthy</span>  <!-- Added margin for spacing -->
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Weekly</a>
@@ -33,10 +24,7 @@
                 </li>
             </ul>
         </div>
-    </nav>    
-    
-    <!-- Highlight bar for the current page -->
-    <div class="highlight-bar"></div>
+    </nav>
 
     <div class="container">
         {% block main %}
