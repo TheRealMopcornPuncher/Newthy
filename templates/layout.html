@@ -26,16 +26,18 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container center">
         {% block main %}
         <!-- Main content will be injected here -->
         {% endblock %}
         
         <!-- Textbox for other templates to insert content -->
-        <div class="textbox">
-            {% block textbox %}
-            <!-- Text content will be injected here -->
-            {% endblock %}
+        <div class="center-container">
+            <div class="textbox">
+                {% block textbox %}
+                <!-- Text content will be injected here -->
+                {% endblock %}
+            </div>
         </div>
     </div>
 </body>

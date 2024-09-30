@@ -23,14 +23,22 @@
     padding: 10px 20px; /* Adjust padding to control the size of the clickable area */
 }
 
+.center-container {
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Full viewport height */
+}
+
 .textbox {
     background-color: #f0f8ff; /* Light blue background color */
     padding: 20px; /* Padding around the text */
-    margin-top: 20px; /* Margin from other elements */
+    margin: auto; /* Margin from other elements */
     border: 1px solid #cccccc; /* Light border */
     border-radius: 5px; /* Rounded corners */
     color: #333; /* Text color */
     font-size: 1.2rem; /* Text size */
     width: auto; /* Ensure the box adapts to its content */
     display: inline-block; /* Allows the box to only be as wide as its content */
+    text-align: center; /* Center the text within the box */
 }
