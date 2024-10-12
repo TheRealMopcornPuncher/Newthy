@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import sqlite3
 
 app = Flask(__name__)
 
@@ -29,3 +30,15 @@ def apology(message, code=400):
 @app.route("/")
 def index():
     return render_template("index.html")
+
+@app.route("/daily")
+def daily():
+    return render_template("daily.html")
+
+@app.route("/monthly")
+def monthly():
+    return render_template("monthly.html")
+
+@app.route("/past")
+def past():
+    return render_template("past.html")
