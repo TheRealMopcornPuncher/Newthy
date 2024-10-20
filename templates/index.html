@@ -1,19 +1,17 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    Weekly - Newthy
+    Summaries
 {% endblock %}
 
-{% block textbox %}
-    <h2>Weekly Summaries</h2>
+{% block content %}
+    <h1>Article Summaries</h1>
     <ul>
         {% for title, summary in summaries %}
             <li>
-                <strong>{{ title }}</strong><br>
-                {{ summary }}
+                <h2>{{ title }}</h2>
+                <p>{{ summary }}</p>
             </li>
-        {% else %}
-            <li>No summaries available.</li>
         {% endfor %}
     </ul>
 {% endblock %}
