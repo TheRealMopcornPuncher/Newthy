@@ -33,12 +33,12 @@ def index():
 
 @app.route("/daily")
 def daily():
-    return render_template("daily.html")
+    return apology("This page is not complete", 400)
 
 @app.route("/monthly")
 def monthly():
-    return render_template("monthly.html")
+    return apology("This page is not complete", 400)
 
 @app.route("/past")
 def past():
-    return render_template("past.html")
+    return apology("This page is not complete", 400)
