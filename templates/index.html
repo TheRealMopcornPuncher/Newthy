@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Summaries
+{% endblock %}
+
+{% block content %}
+    <h1>Article Summaries</h1>
+    <ul>
+        {% for title, summary in summaries %}
+            <li>
+                <h2>{{ title }}</h2>
+                <p>{{ summary }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
