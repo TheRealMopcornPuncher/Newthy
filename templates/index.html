@@ -5,5 +5,15 @@
 {% endblock %}
 
 {% block textbox %}
-    
+    <h2>Weekly Summaries</h2>
+    <ul>
+        {% for title, summary in summaries %}
+            <li>
+                <strong>{{ title }}</strong><br>
+                {{ summary }}
+            </li>
+        {% else %}
+            <li>No summaries available.</li>
+        {% endfor %}
+    </ul>
 {% endblock %}
